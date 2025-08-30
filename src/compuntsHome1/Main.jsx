@@ -27,6 +27,7 @@ import AboutCard from "../AboutUs/AboutCard";
 function Main() {
 return ( <main>
 <TopBar/>
+
 <HomeHeader/>
 <AboutCard/>
 <Homebotton/>

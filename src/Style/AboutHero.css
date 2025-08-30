@@ -5,11 +5,16 @@
   padding: 40px;
   background: #f9f9f9;
   border-radius: 10px;
-  flex-direction: row-reverse;  
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  gap: 20px; 
 }
 
 .content {
+  flex: 1; 
+  min-width: 300px; 
   max-width: 50%;
+  padding-right: 20px;
 }
 
 h1 {
@@ -36,14 +41,37 @@ p {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: 0.3s ease;
 }
 
 .explore-btn:hover {
   background-color: #28a87d;
 }
 
+.image-container {
+  flex: 1;
+  min-width: 300px; 
+}
+
 .image-container img {
-  max-width: 100%;
+  width: 100%; 
   height: auto;
   border-radius: 10px;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; 
+    text-align: center;
+  }
+
+  .content {
+    max-width: 100%;
+    padding-right: 0;
+  }
+
+  .image-container {
+    margin-top: 20px;
+  }
 }
