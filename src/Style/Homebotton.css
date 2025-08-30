@@ -1,0 +1,122 @@
+.features {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+
+.features-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #0b1c55;
+  line-height: 1.4;
+  margin-bottom: 50px;
+  text-align: left; 
+}
+
+.features-title span {
+  color: #10b981;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px; 
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-align: left; 
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+
+.card-content-wrapper {
+  display: flex; 
+  align-items: center; 
+  gap: 40px; 
+}
+
+
+.icon-wrapper {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+
+.card-icon {
+  width: 100px; 
+  height: 70px;
+}
+
+
+.card-text-content {
+  display: flex;
+  flex-direction: column; 
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #0b1c55;
+  margin-bottom: 5px; 
+}
+
+.course-count { 
+  font-size: 0.9rem;
+  color: #10b981; 
+}
+
+
+
+.start-learning-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.start-learning-section .text {
+  color: #33d17a;
+  font-weight: bold;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+.start-learning-section .line {
+  height: 2px;
+  width: 150px;
+  background-color: #33d17a;
+}
+
+
+@media (max-width: 992px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media (max-width: 600px) {
+  .features-title {
+    font-size: 22px;
+  }
+  .cards-grid {
+    grid-template-columns: 1fr; 
+  }
+  .start-learning-section {
+    justify-content: center;
+  }
+}

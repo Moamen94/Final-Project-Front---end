@@ -1,0 +1,118 @@
+
+.card-section {
+    padding: 60px 20px;
+    background-color: #f8faff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    font-family: Arial, sans-serif;
+}
+
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    max-width: 1200px;
+    justify-content: center;
+}
+
+
+.card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 40px 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    flex: 1;
+    min-width: 28px;
+    max-width: 350px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.card-title {
+    font-size: 24px;
+    color: #3f51b5;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+
+.card-description {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+
+.card-button {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #3f51b5;
+    font-weight: 600;
+    font-size: 14px;
+    transition: color 0.3s ease;
+    margin-top: auto;
+}
+
+
+.card-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #0b1c55;              
+  font-weight: 800;            
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  line-height: 1;
+  margin-top: auto;
+}
+
+
+.card-button .bg-circle {
+  position: absolute;
+  left: -18px;                 
+  width: 46px;
+  height: 46px;
+  background: #d4f6ea;         
+  border-radius: 50%;
+  z-index: 0;                  
+  transition: transform .25s ease, opacity .25s ease;
+  opacity: 1;
+}
+
+
+.card-button .label,
+.card-button .arrow {
+  position: relative;
+  z-index: 1;
+}
+
+
+.card-button .arrow {
+  font-size: 18px;
+  transform: translateX(0);
+  transition: transform .25s ease;
+}
+
+
+.card-button:hover .bg-circle {
+  transform: scale(1.06);
+}
+.card-button:hover .arrow {
+  transform: translateX(4px);
+}
+
+
+.card {
+  text-align: left;            
+}

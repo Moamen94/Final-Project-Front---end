@@ -1,0 +1,45 @@
+.readmore-btn {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 700;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #0b1c55;
+  text-transform: uppercase;
+  text-decoration: none;
+  gap: 8px;
+}
+
+/* الجزء الأول داخل دائرة */
+.circle-text {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #d1fae5;   /* دائرة خضراء فاتحة */
+  color: #0b1c55;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  font-size: 14px;
+  font-weight: 700;
+  z-index: 1;
+}
+
+/* باقي النص */
+.rest-text {
+  margin-left: 6px;
+  font-weight: 700;
+}
+
+/* الأيقونة */
+.icon {
+  margin-left: 8px;
+  font-size: 16px;
+  transition: transform 0.3s ease;
+}
+
+.readmore-btn:hover .icon {
+  transform: translateX(4px);
+}

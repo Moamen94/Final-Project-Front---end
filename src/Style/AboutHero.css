@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  flex-direction: row-reverse;  
+}
+
+.content {
+  max-width: 50%;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: #33cc99;
+}
+
+p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.explore-btn {
+  padding: 15px 30px;
+  background-color: #33cc99;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.explore-btn:hover {
+  background-color: #28a87d;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
